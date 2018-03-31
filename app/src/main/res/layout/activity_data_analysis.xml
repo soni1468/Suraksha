@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5CAE9"
+    android:orientation="vertical"
+    tools:context="hu.pe.yummykart.surakshauser.DataAnalysisActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="SELECT STATE/UT"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        app:ms_arrowColor="@color/arrowColor"
+        app:ms_arrowSize="20dp"
+        app:ms_baseColor="@color/baseColor"
+        app:ms_enableFloatingLabel="true"
+        app:ms_floatingLabelColor="@color/floatingLableColor"
+        app:ms_floatingLabelText="State/UT"
+        app:ms_hint="State/UT"
+        app:ms_hintColor="@color/hintColor"
+        app:ms_multiline="false" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_submit"
+        android:onClick="submit"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_validation"
+        android:onClick="perVariation"
+        android:text="% VARIATION IN CRIME in 2015 over 2014"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
